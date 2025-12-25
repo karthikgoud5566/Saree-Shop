@@ -1,0 +1,630 @@
+/* Main Header - BIGGER & CLEANER */
+.saree-header {
+  background: linear-gradient(135deg, #6A1B9A 0%, #8E24AA 50%, #E91E63 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;                    /* Reduced padding for better fit */
+  height: 80px;                       /* Slightly smaller for better proportion */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 8px 32px rgba(106, 27, 154, 0.3);
+  backdrop-filter: blur(20px);
+}
+
+/* Brand Section */
+.brand-section {
+  flex: 0 0 auto;                     /* Don't shrink */
+  min-width: 200px;
+}
+
+.brand-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;                          /* Reduced gap */
+}
+
+.saree-icon {
+  font-size: 2.2rem;                  /* Smaller icon */
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+}
+
+.brand-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.brand-name {
+  font-size: 1.6rem;                  /* Smaller brand name */
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.brand-tagline {
+  font-size: 0.8rem;                  /* Smaller tagline */
+  opacity: 0.9;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+/* Desktop Navigation - Better Spacing */
+.desktop-nav {
+  display: flex;
+  gap: 16px;                          /* Reduced gap */
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;                           /* Smaller gap */
+  color: white;
+  text-decoration: none;
+  padding: 12px 16px;                 /* Smaller padding */
+  border-radius: 16px;
+  transition: all 0.4s ease;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  min-width: 70px;                    /* Smaller min-width */
+  text-align: center;
+}
+
+.nav-item.featured {
+  background: rgba(255, 179, 0, 0.2);
+  border: 2px solid rgba(255, 179, 0, 0.4);
+}
+
+.nav-item:hover {
+  background: rgba(255,255,255,0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.nav-icon {
+  font-size: 1.2rem;                  /* Smaller icons */
+  line-height: 1;
+}
+
+.nav-item span:last-child {
+  font-size: 0.75rem;                 /* Smaller text */
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Header Right - Better Control */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;                          /* Smaller gap */
+  flex: 0 0 auto;                     /* Don't shrink */
+  justify-content: flex-end;
+}
+
+/* User Welcome - Compact */
+.user-welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  background: rgba(255,255,255,0.15);
+  padding: 8px 16px;                  /* Smaller padding */
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  position: relative;
+  min-width: 120px;
+}
+
+.welcome-text {
+  font-size: 0.7rem;
+  opacity: 0.9;
+}
+
+.user-name {
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.namaste-icon {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  font-size: 1rem;
+}
+
+/* Cart Button - Fixed */
+.cart-btn {
+  background: linear-gradient(135deg, #FFB300 0%, #FF8F00 100%);
+  border: none;
+  color: white;
+  padding: 0;
+  border-radius: 16px;                /* Smaller radius */
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 16px rgba(255, 179, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  min-width: 100px;                   /* Fixed minimum width */
+}
+
+.cart-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 179, 0, 0.4);
+}
+
+.cart-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;                           /* Smaller gap */
+  padding: 10px 16px;                 /* Smaller padding */
+  position: relative;
+}
+
+.cart-emoji {
+  font-size: 1.2rem;                  /* Smaller emoji */
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+  flex-shrink: 0;                     /* Don't shrink */
+}
+
+.cart-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.1;
+  min-width: 0;                       /* Allow shrinking */
+}
+
+.cart-label {
+  font-size: 0.8rem;                  /* Smaller text */
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  white-space: nowrap;
+}
+
+.item-count {
+  font-size: 0.7rem;                  /* Smaller count */
+  opacity: 0.9;
+  white-space: nowrap;
+}
+
+.cart-notification {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: #E91E63;
+  color: white;
+  border-radius: 50%;
+  width: 20px;                        /* Smaller badge */
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(233, 30, 99, 0.5);
+  border: 2px solid white;
+}
+
+/* Logout Button - Compact */
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,0.1);
+  border: 2px solid rgba(255,255,255,0.2);
+  color: white;
+  padding: 8px 16px;                  /* Smaller padding */
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.8rem;                  /* Smaller text */
+  white-space: nowrap;
+}
+
+.logout-btn:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-1px);
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.menu-bars span {
+  width: 24px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.menu-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Mobile Drawer - Keep existing styles */
+.mobile-drawer {
+  width: 280px !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .saree-header {
+    padding: 0 16px;
+    height: 70px;
+  }
+  
+  .brand-name {
+    font-size: 1.3rem;
+  }
+  
+  .brand-tagline {
+    font-size: 0.7rem;
+  }
+  
+  .logo-container {
+    gap: 12px;
+  }
+  
+  .desktop-nav {
+    display: none;
+  }
+  
+  .user-welcome,
+  .logout-btn {
+    display: none;
+  }
+  
+  .cart-details {
+    display: none;
+  }
+  
+  .cart-container {
+    padding: 8px 12px;
+  }
+  
+  .cart-emoji {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .saree-header {
+    padding: 0 12px;
+  }
+  
+  .brand-name {
+    font-size: 1.1rem;
+  }
+  
+  .header-right {
+    gap: 12px;
+  }
+}
+
+/* Additional fix for cart text wrapping */
+@media (max-width: 1200px) {
+  .cart-label {
+    font-size: 0.75rem;
+  }
+  
+  .item-count {
+    font-size: 0.65rem;
+  }
+}
+
+/* ===== ADD THIS AT THE END OF Header.css ===== */
+
+@media (max-width: 768px) {
+  /* Mobile Header Improvements */
+  .saree-header {
+    padding: 0 12px;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  .brand-name {
+    font-size: 1.3rem;
+  }
+  
+  .brand-tagline {
+    font-size: 0.7rem;
+  }
+  
+  /* Enhanced Mobile Cart */
+  .cart-container {
+    padding: 12px 16px;
+    background: rgba(255, 179, 0, 0.95);
+    border-radius: 20px;
+    min-width: 65px;
+    box-shadow: 0 4px 12px rgba(255, 179, 0, 0.3);
+  }
+  
+  .cart-emoji {
+    font-size: 1.8rem;
+  }
+  
+  /* Bigger Mobile Menu Button */
+  .mobile-menu-btn {
+    padding: 14px;
+    background: rgba(255,255,255,0.25);
+    border-radius: 16px;
+    min-width: 50px;
+    min-height: 50px;
+  }
+  
+  .menu-bars span {
+    width: 26px;
+    height: 4px;
+  }
+  
+  /* Enhanced Mobile Drawer */
+  .mobile-drawer {
+    width: 90vw !important;
+    max-width: 340px !important;
+  }
+  
+  .drawer-header {
+    padding: 24px 20px;
+  }
+  
+  .close-drawer {
+    width: 46px;
+    height: 46px;
+    font-size: 1.5rem;
+    background: rgba(255,255,255,0.25);
+    border-radius: 50%;
+  }
+  
+  .drawer-link {
+    padding: 18px 20px;
+    font-size: 1.2rem;
+    margin: 6px 16px;
+    border-radius: 16px;
+  }
+  
+  .drawer-link-icon {
+    font-size: 1.8rem;
+    min-width: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .saree-header {
+    padding: 0 10px;
+    height: 65px;
+  }
+  
+  .brand-name {
+    font-size: 1.1rem;
+  }
+  
+  .brand-tagline {
+    display: none;
+  }
+  
+  .mobile-drawer {
+    width: 95vw !important;
+    max-width: none !important;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  /* Mobile Drawer Fix */
+  .mobile-drawer {
+    width: 85vw !important;
+    max-width: 320px !important;
+  }
+
+  .drawer-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: white;
+  }
+
+  .drawer-header {
+    background: linear-gradient(135deg, #6A1B9A, #E91E63);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .drawer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .drawer-icon {
+    font-size: 1.5rem;
+  }
+
+  .drawer-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  .close-drawer {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Mobile User Section */
+  .mobile-user-section {
+    padding: 20px;
+    background: rgba(106, 27, 154, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 1px solid rgba(106, 27, 154, 0.1);
+    flex-shrink: 0;
+  }
+
+  .mobile-avatar {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #6A1B9A, #E91E63);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .mobile-user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .mobile-welcome {
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  .mobile-username {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #6A1B9A;
+  }
+
+  /* Navigation Links */
+  .drawer-nav {
+    flex: 1;
+    padding: 20px 0;
+    overflow-y: auto;
+  }
+
+  .drawer-link {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #333;
+    text-decoration: none;
+    padding: 16px 20px;
+    margin: 4px 16px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+  }
+
+  .drawer-link:hover {
+    background: rgba(106, 27, 154, 0.1);
+    transform: translateX(4px);
+  }
+
+  .drawer-link.special {
+    background: linear-gradient(135deg, rgba(255, 179, 0, 0.1), rgba(233, 30, 99, 0.1));
+    border: 2px solid rgba(255, 179, 0, 0.3);
+  }
+
+  .drawer-link-icon {
+    font-size: 1.4rem;
+    min-width: 24px;
+    text-align: center;
+  }
+
+  .special-badge {
+    background: #FFB300;
+    color: white;
+    font-size: 0.7rem;
+    padding: 4px 8px;
+    border-radius: 8px;
+    margin-left: auto;
+    font-weight: 600;
+  }
+
+  /* Cart Section */
+  .drawer-cart-section {
+    padding: 16px;
+    border-top: 1px solid rgba(106, 27, 154, 0.1);
+    flex-shrink: 0;
+  }
+
+  .drawer-cart-link {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #333;
+    text-decoration: none;
+    padding: 16px 20px;
+    margin: 0;
+    border-radius: 12px;
+    background: rgba(255, 179, 0, 0.1);
+    border: 2px solid rgba(255, 179, 0, 0.3);
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  /* Drawer Footer */
+  .drawer-footer {
+    padding: 20px;
+    border-top: 1px solid rgba(106, 27, 154, 0.1);
+    flex-shrink: 0;
+  }
+
+  .drawer-logout {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #6A1B9A, #E91E63);
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .drawer-logout:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(106, 27, 154, 0.3);
+  }
+}
+
