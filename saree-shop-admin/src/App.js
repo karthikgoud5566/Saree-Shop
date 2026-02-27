@@ -143,7 +143,7 @@ const SareeEdit = (props) => {
         formData.append('image', file);
         
         try {
-            const uploadResponse = await fetch(`http://localhost:8080/api/sarees/${sareeId}/upload-image`, {
+            const uploadResponse = await fetch(`${process.env.REACT_APP_API_BASE_URL}/sarees/${sareeId}/upload-image`, {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem('adminToken')}`
