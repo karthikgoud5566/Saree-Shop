@@ -14,7 +14,7 @@ const Home = () => {
       subtitle: "Illuminate your festivities with our exquisite sarees",
       offer: "Up to 40% OFF",
       background: "linear-gradient(135deg, #FF6B35 0%, #F7931E 100%)",
-      sareeImage: "https://images.unsplash.com/photo-1583391733956-6c78276477e5?w=400", // Diwali saree
+      sareeImage: "https://images.unsplash.com/photo-1679006831648-7c9ea12e5807?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2FyZWVzfGVufDB8fDB8fHww", // Diwali saree
       cta: "Shop Diwali Collection"
     },
     {
@@ -23,7 +23,7 @@ const Home = () => {
       subtitle: "Make your special day unforgettable",
       offer: "New Collection",
       background: "linear-gradient(135deg, #C41E3A 0%, #E91E63 100%)",
-      sareeImage: "https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=400", // Bridal saree
+      sareeImage: "https://images.unsplash.com/photo-1610276580899-53d1af1a1359?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHNhcmVlc3xlbnwwfHwwfHx8MA%3D%3D", // Bridal saree
       cta: "Explore Bridal Wear"
     },
     {
