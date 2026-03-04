@@ -1,70 +1,147 @@
-# Getting Started with Create React App
+# 🛍️ Padma Saree Collection – Full Stack E-Commerce Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A **Full Stack E-Commerce Web Application** built using **React.js and Spring Boot** that allows users to browse saree collections, view product details, and interact with a modern responsive shopping interface.
 
-## Available Scripts
+This project demonstrates **full stack architecture, secure authentication, cloud storage integration, and cloud deployment.**
 
-In the project directory, you can run:
+---
 
-### `npm start`
+# 🚀 Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🌐 **Website**  
+https://saree-shop-sooty.vercel.app/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+# 💻 GitHub Repositories
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Frontend  
+https://github.com/karthikgoud5566/Saree-Shop  
 
-### `npm run build`
+Backend  
+https://github.com/karthikgoud5566/saree-shop-backend  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# 🛠 Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Frontend
+- React.js
+- Axios
 
-### `npm run eject`
+## Backend
+- Spring Boot
+- Spring Security
+- JWT Authentication
+- REST APIs
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Database
+- MySQL
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Cloud & Deployment
+- Vercel – Frontend Hosting
+- Railway – Backend Deployment
+- Cloudinary – Image Storage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# ✨ Features
 
-## Learn More
+✔ Modern responsive UI  
+✔ Product browsing and product detail pages  
+✔ Add to cart functionality  
+✔ Secure authentication using JWT  
+✔ Image management with Cloudinary  
+✔ Contact page with business details and map integration  
+✔ REST API communication between frontend and backend  
+✔ Full stack cloud deployment
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# 📸 Application Screenshots
 
-### Code Splitting
+### 🏠 Homepage
+Displays featured saree collections and promotional offers.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 👗 Product Details Page
+Shows saree information including price, availability, and description.
 
-### Analyzing the Bundle Size
+### 🔐 Login Page
+Secure login implemented using JWT authentication.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 📞 Contact Page
+Includes contact details and location map.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# 🏗 System Architecture
 
-### Advanced Configuration
+React.js Frontend
+↓
+Spring Boot REST APIs
+↓
+MySQL Database
+↓
+Cloudinary (Image Storage)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Frontend communicates with backend APIs to fetch product data and manage authentication.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# ⚙ Installation & Setup
+
+## 1️⃣ Clone Frontend Repository
+
+```bash
+git clone https://github.com/karthikgoud5566/Saree-Shop
+cd Saree-Shop
+npm install
+npm start
+
+
+
+📂 Project Structure
+Frontend
+src
+ ├── components
+ ├── pages
+ ├── services
+ ├── assets
+ └── App.js
+
+Backend
+controller
+service
+repository
+model
+security
+config
+
+📚 What I Learned
+
+Through this project I gained practical experience in:
+
+Full Stack Development
+
+REST API Design
+
+JWT Authentication
+
+Cloud Storage Integration
+
+React and Spring Boot integration
+
+Cloud deployment using Vercel and Railway
+
+
+
+👨‍💻 Author
+
+Karthik Biyani
+
+Java Full Stack Developer
+
+GitHub
+https://github.com/karthikgoud5566
